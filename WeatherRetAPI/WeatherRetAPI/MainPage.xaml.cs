@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -25,6 +26,21 @@ namespace WeatherRetAPI
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        async void getWeather()
+        {
+            //store the GET request in a URL which can be referenced later
+            string GetRequestURL = "https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22";
+
+            //create an instance of HttpClient
+            HttpClient client = new HttpClient();
+
+            //get the reponse as JSON format
+            string response = await client.GetStringAsync(GetRequestURL);
+
+            //assign the textbox in the UWP application to be the data deserialised by the Weather.cs class
+            Temperature.Text = 
         }
     }
 }

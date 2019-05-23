@@ -12,7 +12,7 @@
         <StackPanel>
             <TextBlock FontSize="50">Weather Application</TextBlock>
             <TextBlock FontSize="30">Weather in London</TextBlock>
-            
+            <TextBlock Name="Temperature" FontSize="40"></TextBlock>
         </StackPanel>
 
     </Grid>
