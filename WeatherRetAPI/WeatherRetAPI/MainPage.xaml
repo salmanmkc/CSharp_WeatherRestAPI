@@ -14,6 +14,7 @@
             <TextBlock FontSize="30" Text="Weather in London"></TextBlock>
             <TextBlock Name="Temperature" FontSize="40"></TextBlock>
             <TextBlock Name="Visibility" FontSize="25"></TextBlock>
+            <TextBlock Name="Test" FontSize="25"></TextBlock>
         </StackPanel>
 
     </Grid>

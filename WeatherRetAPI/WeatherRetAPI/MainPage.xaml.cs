@@ -50,6 +50,9 @@ namespace WeatherRetAPI
 
             //assign the textbox in the UWP application to show the visibility
             Visibility.Text = parseddata.visibility.ToString();
+
+            //assign the textbox in the UWP application to show the visibility
+            Test.Text = parseddata.eather.
         }
     }
 }
