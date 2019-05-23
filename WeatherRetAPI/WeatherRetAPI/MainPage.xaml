@@ -12,9 +12,9 @@
         <StackPanel>
             <TextBlock FontSize="50" Text="Weather Application"> </TextBlock>
             <TextBlock FontSize="30" Text="Weather in London"></TextBlock>
-            <TextBlock Name="Temperature" FontSize="40"></TextBlock>
-            <TextBlock Name="Visibility" FontSize="25"></TextBlock>
-            <TextBlock Name="Description" FontSize="25"></TextBlock>
+            <TextBlock Name="Temperature" FontSize="40" Text="temporary"></TextBlock>
+            <TextBlock Name="Visibility" FontSize="25" Text="temporary"></TextBlock>
+            <TextBlock Name="Description" FontSize="25" Text="temporary"></TextBlock>
         </StackPanel>
 
     </Grid>
