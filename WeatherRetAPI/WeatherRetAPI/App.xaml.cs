@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace WeatherRetAPI
+namespace WeatherRestAPI
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
@@ -73,7 +73,7 @@ namespace WeatherRetAPI
             }
         }
 
-        /// <summary>
+        /// <summaryRoot
         /// Invoked when Navigation to a certain page fails
         /// </summary>
         /// <param name="sender">The Frame which failed navigation</param>

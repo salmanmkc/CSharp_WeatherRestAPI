@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
-using WeatherRetAPI.Model_JSON_Class;
+
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace WeatherRetAPI
+namespace WeatherRestAPI
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -52,7 +52,9 @@ namespace WeatherRetAPI
             Visibility.Text = parseddata.visibility.ToString();
 
             //assign the textbox in the UWP application to show the visibility
-            Test.Text = parseddata.eather.
+            //Test.Text = parseddata.wind.speed.ToString() + " meters per second";
+
+            Description.Text = parseddata.weather[0].description.ToString();
         }
     }
 }
