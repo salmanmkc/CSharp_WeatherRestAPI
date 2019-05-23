@@ -46,7 +46,10 @@ namespace WeatherRetAPI
             var parseddata = JsonConvert.DeserializeObject<Rootobject>(response);
 
             //assign the textbox in the UWP application from the deserialsed data
-            Temperature.Text = parseddata.main.temp.ToString() + " Farenheit";
+            Temperature.Text = parseddata.main.temp.ToString() + " Kelvin";
+
+            //assign the textbox in the UWP application to show the visibility
+            Visibility.Text = parseddata.visibility.ToString();
         }
     }
 }

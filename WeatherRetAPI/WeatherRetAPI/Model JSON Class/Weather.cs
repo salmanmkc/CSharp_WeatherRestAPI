@@ -10,7 +10,7 @@ namespace WeatherRetAPI.Model_JSON_Class
     public class Rootobject
     {
         public Coord coord { get; set; }
-        public List<Weather> weather { get; set; }
+        public List<Weather> eather { get; set; }
         public string _base { get; set; }
         public Main main { get; set; }
         public int visibility { get; set; }
