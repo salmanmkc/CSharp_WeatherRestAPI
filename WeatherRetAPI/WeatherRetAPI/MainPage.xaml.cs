@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
+using WeatherRetAPI.Model_JSON_Class;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -27,6 +28,7 @@ namespace WeatherRetAPI
         public MainPage()
         {
             this.InitializeComponent();
+            getWeather();
         }
 
         async void getWeather()
@@ -41,10 +43,10 @@ namespace WeatherRetAPI
             string response = await client.GetStringAsync(GetRequestURL);
 
             //parse the data
-            var parseddata = JsonConvert
+            var parseddata = JsonConvert.DeserializeObject<Rootobject>(response);
 
             //assign the textbox in the UWP application from the deserialsed data
-            Temperature.Text = 
+            Temperature.Text = parseddata.main.temp.ToString() + " Farenheit";
         }
     }
 }
