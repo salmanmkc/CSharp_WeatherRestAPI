@@ -9,8 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel>
-            <TextBlock FontSize="50" Text="Weather Application"> </TextBlock>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="294*"/>
+            <ColumnDefinition Width="1207*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="2">
+            <TextBlock FontSize="50" Text="Weather Application"></TextBlock>
             <TextBlock FontSize="30" Text="Weather in London"></TextBlock>
             <TextBlock Name="Temperature" FontSize="40" Text="temporary"></TextBlock>
             <TextBlock Name="Visibility" FontSize="25" Text="temporary"></TextBlock>
