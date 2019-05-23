@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -40,6 +41,7 @@ namespace WeatherRetAPI
             string response = await client.GetStringAsync(GetRequestURL);
 
             //parse the data
+            var parseddata = JsonConvert
 
             //assign the textbox in the UWP application from the deserialsed data
             Temperature.Text = 
