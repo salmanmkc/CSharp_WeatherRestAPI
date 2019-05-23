@@ -39,7 +39,9 @@ namespace WeatherRetAPI
             //get the reponse as JSON format
             string response = await client.GetStringAsync(GetRequestURL);
 
-            //assign the textbox in the UWP application to be the data deserialised by the Weather.cs class
+            //parse the data
+
+            //assign the textbox in the UWP application from the deserialsed data
             Temperature.Text = 
         }
     }
